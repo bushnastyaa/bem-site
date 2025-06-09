@@ -1,0 +1,81 @@
+.tips {
+  padding: 100px 20px 80px;
+  background-color: #f9f9f9;
+}
+
+.tips__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tips__title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.tips__subtitle {
+  font-size: 1.125rem;
+  color: #666;
+}
+
+.tips__accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tips__item {
+  border-bottom: 1px solid #ddd;
+}
+
+.tips__trigger {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 18px 20px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.tips__trigger:hover {
+  background-color: #f1f1f1;
+}
+
+.tips__trigger-icon {
+  display: inline-block;
+  width: 24px;
+  font-size: 1.5rem;
+  margin-right: 12px;
+  color: #5da7a3;
+  transition: transform 0.3s ease;
+}
+
+.tips__trigger-title {
+  font-size: 1.125rem;
+  color: #333;
+}
+
+.tips__content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: max-height 0.4s ease;
+}
+
+.tips__text {
+  padding: 0 20px 20px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.tips__item--active .tips__trigger-icon {
+  transform: rotate(45deg);
+}
+
+.tips__item--active .tips__content {
+  max-height: 200px;
+}

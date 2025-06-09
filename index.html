@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SleepWell</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/tips.css" />
+  <link rel="stylesheet" href="css/test.css" />
+  <link rel="stylesheet" href="css/articles.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo">SleepWell</div>
+      <nav class="header__nav">
+        <a href="#hero" class="header__link">Главная</a>
+        <a href="#tips" class="header__link">Советы</a>
+        <a href="#test" class="header__link">Тест</a>
+        <a href="#articles" class="header__link">Статьи</a>
+        <a href="#form" class="header__link">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero__content">
+      <div class="hero__text">
+        <h1 class="hero__title">Погрузись в мир здорового сна</h1>
+        <p class="hero__description">
+          Узнай, как улучшить качество сна с помощью простых, но эффективных советов
+        </p>
+        <a href="#tips" class="hero__button">Узнать больше</a>
+      </div>
+      <div class="hero__image">
+        <img
+          src="images/hero-girl.png"
+          alt="Человек, спящий на подушке" />
+      </div>
+    </div>
+  </section>
+
+  <section id="tips" class="tips">
+    <div class="tips__header">
+      <h2 class="tips__title">Советы для здорового сна</h2>
+      <p class="tips__subtitle">Небольшие привычки, которые улучшат ваш сон</p>
+    </div>
+
+    <div class="tips__accordion">
+      <div class="tips__item">
+        <button class="tips__trigger">
+          <span class="tips__trigger-icon">+</span>
+          <span class="tips__trigger-title">Темная комната</span>
+        </button>
+        <div class="tips__content">
+          <p class="tips__text">
+            Убедитесь, что в спальне минимум источников света: чем темнее, тем крепче сон
+          </p>
+        </div>
+      </div>
+
+      <div class="tips__item">
+        <button class="tips__trigger">
+          <span class="tips__trigger-icon">+</span>
+          <span class="tips__trigger-title">Регулярный режим</span>
+        </button>
+        <div class="tips__content">
+          <p class="tips__text">
+            Ложитесь и вставайте в одно и то же время - даже в выходные. Так “настроятся” внутренние часы
+          </p>
+        </div>
+      </div>
+
+      <div class="tips__item">
+        <button class="tips__trigger">
+          <span class="tips__trigger-icon">+</span>
+          <span class="tips__trigger-title">Меньше экранного времени</span>
+        </button>
+        <div class="tips__content">
+          <p class="tips__text">
+            За час до сна выключайте телефон и ноутбук или используйте фильтры синего света
+          </p>
+        </div>
+      </div>
+
+      <div class="tips__item">
+        <button class="tips__trigger">
+          <span class="tips__trigger-icon">+</span>
+          <span class="tips__trigger-title">Легкий ужин</span>
+        </button>
+        <div class="tips__content">
+          <p class="tips__text">
+            Избегайте тяжелой пищи за 2-3 часа до сна: пищеварение не должно мешать отдыху
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="test" class="test">
+    <div class="test__header">
+      <h2 class="test__title">Тест: Оцени качество своего сна</h2>
+      <p class="test__subtitle">Ответьте на несколько вопросов и узнайте свой “сонный” балл</p>
+    </div>
+
+    <form class="test__form" id="sleep-test-form">
+      <div class="test__question">
+        <p class="test__question-text">1. Как часто вы просыпаетесь среди ночи?</p>
+        <label class="test__option">
+          <input type="radio" name="q1" value="0" required /> Никогда
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q1" value="1" /> Редко (1-2 раза в месяц)
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q1" value="2" /> Несколько раз в неделю
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q1" value="3" /> Почти каждую ночь
+        </label>
+      </div>
+
+      <div class="test__question">
+        <p class="test__question-text">2. Во сколько вы обычно ложитесь спать?</p>
+        <label class="test__option">
+          <input type="radio" name="q2" value="3" required /> До 22:00
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q2" value="2" /> 22:00-23:30
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q2" value="1" /> 23:30-01:00
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q2" value="0" /> После 01:00
+        </label>
+      </div>
+
+      <div class="test__question">
+        <p class="test__question-text">3. Чувствуете ли вы себя бодрым после пробуждения?</p>
+        <label class="test__option">
+          <input type="radio" name="q3" value="3" required /> Всегда
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q3" value="2" /> Часто
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q3" value="1" /> Редко
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q3" value="0" /> Никогда
+        </label>
+      </div>
+
+      <div class="test__question">
+        <p class="test__question-text">4. Как долго вы засыпаете?</p>
+        <label class="test__option">
+          <input type="radio" name="q4" value="3" required /> Менее 15 минут
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q4" value="2" /> 15-30 минут
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q4" value="1" /> 30-60 минут
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q4" value="0" /> Более 60 минут
+        </label>
+      </div>
+
+      <div class="test__question">
+        <p class="test__question-text">5. Какой у вас режим сна в выходные (ставите ли будильник)?</p>
+        <label class="test__option">
+          <input type="radio" name="q5" value="3" required /> Ложусь и встаю в одно и то же время
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q5" value="2" /> Иногда меняется на 1-2 часа
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q5" value="1" /> Разница 3-4 часа
+        </label>
+        <label class="test__option">
+          <input type="radio" name="q5" value="0" /> Сильно отличается (более 4 часов)
+        </label>
+      </div>
+
+      <button type="submit" class="test__submit-button">Узнать результат</button>
+    </form>
+
+    <div id="test-result" class="test__result hidden">
+    </div>
+  </section>
+
+  <section id="articles" class="articles">
+    <div class="articles__header">
+      <h2 class="articles__title">Статьи о здоровом сне</h2>
+      <p class="articles__subtitle">Полезные факты и исследования</p>
+    </div>
+
+    <div class="articles__list">
+      <article class="articles__item">
+        <img
+          class="articles__image"
+          src="images/article-nap.jpg"
+          alt="Польза дневного сна" />
+        <h3 class="articles__item-title">Польза короткого дневного сна</h3>
+        <p class="articles__item-text">
+          Исследования показывают, что 20-минутная сиеста повышает продуктивность и концентрацию. Узнайте больше о том, как правильно вздремнуть…
+        </p>
+        <a href="#" class="articles__read-more">Читать далее →</a>
+      </article>
+
+      <article class="articles__item">
+        <img
+          class="articles__image"
+          src="images/article-gadgets.jpg"
+          alt="Гаджеты и сон" />
+        <h3 class="articles__item-title">Как гаджеты влияют на сон</h3>
+        <p class="articles__item-text">
+          Синий свет экрана подавляет выработку мелатонина. Узнайте, как минимизировать негативный эффект при помощи настроек…
+        </p>
+        <a href="#" class="articles__read-more">Читать далее →</a>
+      </article>
+
+      <article class="articles__item">
+        <img
+          class="articles__image"
+          src="images/article-pillow.jpg"
+          alt="Правильная подушка" />
+        <h3 class="articles__item-title">Выбор правильной подушки</h3>
+        <p class="articles__item-text">
+          Неправильная подушка может привести к головным болям и боли в шее. Рассмотрим основные виды и рекомендации по выбору…
+        </p>
+        <a href="#" class="articles__read-more">Читать далее →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="form" class="form">
+    <div class="form__header">
+      <h2 class="form__title">Свяжитесь с нами</h2>
+      <p class="form__subtitle">Есть вопросы? Напишите нам, и мы ответим в ближайшее время</p>
+    </div>
+
+    <form class="form__container">
+      <div class="form__group">
+        <label for="name" class="form__label">Имя</label>
+        <input id="name" type="text" class="form__input" placeholder="Имя" required />
+      </div>
+      <div class="form__group">
+        <label for="email" class="form__label">Email</label>
+        <input id="email" type="email" class="form__input" placeholder="name@google.com" required />
+      </div>
+      <div class="form__group">
+        <label for="message" class="form__label">Сообщение</label>
+        <textarea
+          id="message"
+          class="form__textarea"
+          rows="5"
+          placeholder="Сообщение..."
+          required></textarea>
+      </div>
+      <button type="submit" class="form__submit-button">Отправить</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__text">
+        © 2025 SleepWell. Все права защищены
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/tips.js"></script>
+  <script src="scripts/test.js"></script>
+</body>
+</html>

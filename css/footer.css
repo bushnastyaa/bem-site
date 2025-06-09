@@ -1,0 +1,18 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 25px 20px;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__text {
+  font-size: 0.9rem;
+}
